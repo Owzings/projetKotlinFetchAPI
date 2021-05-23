@@ -11,14 +11,18 @@ class DetailElement : AppCompatActivity() {
 
         val actionBar = supportActionBar
 
-        actionBar!!.title = "Second Activity"
+        actionBar!!.title = "Détail d'un élément"
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         val intent = intent
         val name = intent.getStringExtra("Name")
+        val descriptionTexte = intent.getStringExtra("Description")
 
         //textview
         val textePrincipal = findViewById<TextView>(R.id.nametext)
         textePrincipal.text = name
+        val texteSecondaire = findViewById<TextView>(R.id.nametext2)
+        texteSecondaire.text = descriptionTexte
+
     }
 }

@@ -67,10 +67,12 @@ class MainActivity : AppCompatActivity(), ExampleAdapter.OnItemClickListener {
         adapter.notifyItemChanged(position)
         val intent = Intent(this, DetailElement::class.java)
         intent.putExtra("Name", clickedItem.text1)
+        intent.putExtra("Description", clickedItem.text2)
+
         clickedItem.text1 = "Clicked"
         startActivity(intent)
     }
-    private fun generateDummyList(size: Int): ArrayList<ExampleItem> {
+     fun generateDummyList(size: Int): ArrayList<ExampleItem> {
 
         val list = ArrayList<ExampleItem>()
         for (i in 0 until size) {
