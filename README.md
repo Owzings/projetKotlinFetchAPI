@@ -1,5 +1,5 @@
 # projetKotlinFetchAPI : projet de cours
-
+[![CI](https://github.com/Owzings/projetKotlinFetchAPI/actions/workflows/blank.yml/badge.svg)](https://github.com/Owzings/projetKotlinFetchAPI/actions/workflows/blank.yml)
 - 1 Exemple de CI/CD : syntaxe
 - 1 Test de fetch sur une API en utilisant rétrofit
 - 1 Ajout random d'un élément sur le recycler view
