@@ -12,3 +12,6 @@
 
 Gitflow => appris sur le tas avec Android-Studio
 Logger (log de fonctionnement) et Firebase notification => En cours...
+
+
+Importer via le fichier ZIP (export clean via android-studio)
