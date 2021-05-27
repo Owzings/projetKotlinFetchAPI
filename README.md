@@ -1,7 +1,8 @@
 # projetKotlinFetchAPI : projet de cours
 [![CI](https://github.com/Owzings/projetKotlinFetchAPI/actions/workflows/blank.yml/badge.svg)](https://github.com/Owzings/projetKotlinFetchAPI/actions/workflows/blank.yml)
-- 1 Exemple de CI/CD : syntaxe
-- 1 Test de fetch sur une API en utilisant rétrofit
+- 2 Exemple de CI/CD : un build gradle et une fonctionnalité fourni par github (autolabel)
+- 1 TDD - Test de fetch sur une API en utilisant rétrofit
+- 1 Système de BDD SQLITE3 pour stocker les objets du recycler view
 - 1 Ajout random d'un élément sur le recycler view
 - 1 Bouton pour fetcher
 - 1 Bouton pour supprimer random
