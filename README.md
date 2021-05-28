@@ -7,9 +7,7 @@
 - 1 Bouton pour fetcher
 - 1 Bouton pour supprimer random
 
-1 Mise en cache avec Gson / SharedPreference sans comparaison avec les données stales qui pourraient avoir changées dans l'API
-(Pour une vraie appli en prod on passerait plutôt via des lib comme caffeine)
-(On pourrait aussi faire une activité avec un intent ou on saisi via input)
+(Ici on ajoute un élément aléatoirement mais on pourrait aussi faire une activité (page d'ajout) avec un intent ou on saisi via input)
 
 Gitflow => appris sur le tas avec Android-Studio
 Logger (log de fonctionnement) et Firebase notification => En cours...
