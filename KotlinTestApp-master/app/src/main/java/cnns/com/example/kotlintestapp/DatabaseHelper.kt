@@ -39,7 +39,7 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DATABASE
     fun readData(limitMax: Int) : MutableList<ExampleItem> {
         val list: MutableList<ExampleItem> = ArrayList()
         val db = this.readableDatabase
-        val query = "Select * from $TABLENAME LIMIT $limitMax"
+        val query = "Select * from $TABLENAME ORDER BY id DESC LIMIT $limitMax"
         val result = db.rawQuery(query, null)
         if (result.moveToFirst()) {
             do {
