@@ -18,7 +18,7 @@ import kotlin.random.Random
 
 
 class MainActivity : AppCompatActivity(), ExampleAdapter.OnItemClickListener {
-    private val exampleList = generateDummyList(500)
+    private val exampleList = generateDummyList(25)
     private val adapter = ExampleAdapter(exampleList, this)
 
 
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity(), ExampleAdapter.OnItemClickListener {
             "Passage sur resume",
             0
         )
-        generateDummyList(500)
+        generateDummyList(25)
         exampleList.add(0, newItem)
         adapter.notifyItemInserted(0)
     }
@@ -95,17 +95,15 @@ class MainActivity : AppCompatActivity(), ExampleAdapter.OnItemClickListener {
 
 //         db.readData()
 //         if(db.readData().size < 2) {
-             for ( i in 0 until 50) {
+             for ( i in 0 until 25) {
                  val drawable = when (i % 3) {
                      0 -> R.drawable.ic_android
                      1 -> R.drawable.ic_audio
                      else -> R.drawable.ic_sun
                  }
                  GlobalScope.launch(Dispatchers.Main) {
-                     println("db.readData(500).size" + db.readData(500).size)
-                     println(db.readData(500).size)
                      try {
-                         if(db.readData(500).size < 5){
+                         if(db.readData(25).size < 5){
 
                              val response = ApiClient.apiService.getPostById(i)
 
@@ -128,7 +126,6 @@ class MainActivity : AppCompatActivity(), ExampleAdapter.OnItemClickListener {
                              println(a)
                             val item = ExampleItem( R.drawable.ic_android, a.text1, a.text2, a.id)
                              list += item
-                             db.insertData(item)
                          }
 
                      } catch (e: Exception) {
