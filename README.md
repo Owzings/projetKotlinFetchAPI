@@ -7,6 +7,7 @@
 - 1 Bouton pour fetcher
 - 1 Bouton pour supprimer random
 
+Design pattern adapter pour gérer l'affichage et le déroulé des items sur le recycler view
 (Ici on ajoute un élément aléatoirement mais on pourrait aussi faire une activité (page d'ajout) avec un intent ou on saisi via input)
 
 Gitflow => appris sur le tas avec Android-Studio
