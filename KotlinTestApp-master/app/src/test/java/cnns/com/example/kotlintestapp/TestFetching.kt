@@ -37,7 +37,7 @@ class TestFetching {
                     val response = ApiClient.apiService.getPostById(1)
                     if (response.isSuccessful && response.body() != null) {
                         val content = response.body()
-                        val item = ExampleItem(0, "Item X", content?.title)
+                        val item = ExampleItem(0, "Item X", content?.title, 0)
                         list.add(item)
 
                         //do something
