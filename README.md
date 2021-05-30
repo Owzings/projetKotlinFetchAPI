@@ -1,4 +1,4 @@
-# projetKotlinFetchAPI : projet de cours
+# projetKotlinFetchAPI : projet de cours fait pas Ali ES-SKOURI
 [![CI](https://github.com/Owzings/projetKotlinFetchAPI/actions/workflows/blank.yml/badge.svg)](https://github.com/Owzings/projetKotlinFetchAPI/actions/workflows/blank.yml)
 - 2 Exemple de CI/CD : un build gradle et une fonctionnalité fourni par github (autolabel)
 - 1 TDD - Test de fetch sur une API en utilisant rétrofit
